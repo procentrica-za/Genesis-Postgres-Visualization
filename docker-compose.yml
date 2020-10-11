@@ -1,0 +1,21 @@
+version: '3'
+services:
+    postgres:
+        build: ./postgres/
+        env_file:
+            - "./postgres/environment.env"
+        ports:
+            - "5432:5432"
+        volumes:
+            - "$HOME/docker/volumes/pgdataAssetVisualizationRegister:/var/lib/postgresql/data"
+        restart: 'always'
+    pgadmin:
+        image: dpage/pgadmin4
+        depends_on:
+            - postgres
+        environment:
+            PGADMIN_DEFAULT_EMAIL: user@domain.com
+            PGADMIN_DEFAULT_PASSWORD: password
+        ports:
+            - "4321:80"
+    
