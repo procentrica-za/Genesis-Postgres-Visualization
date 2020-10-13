@@ -286,7 +286,7 @@ VALUES (592,964,'3 SEATER GALVANISED STEEL BENCH','3 SEATER GALVANISED STEEL BEN
 INSERT INTO public.TypeLookup(ID,AssetTypeID,Name,Description) 
 VALUES (593,964,'3 seater steel bench','3 seater steel bench');
 INSERT INTO public.TypeLookup(ID,AssetTypeID,Name,Description) 
-VALUES (594,964,'Children's play equipment (jungle gym)','Children's play equipment (jungle gym)');
+VALUES (594,964,'Children`s play equipment (jungle gym)','Children`s play equipment (jungle gym)');
 INSERT INTO public.TypeLookup(ID,AssetTypeID,Name,Description) 
 VALUES (595,964,'Concrete table (rectangular)','Concrete table (rectangular)');
 INSERT INTO public.TypeLookup(ID,AssetTypeID,Name,Description) 
